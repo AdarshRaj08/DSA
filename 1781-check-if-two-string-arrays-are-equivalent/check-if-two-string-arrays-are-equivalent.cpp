@@ -12,20 +12,9 @@ public:
         {
             s2 += s;
         }
-        int n1 = s1.length();
-        int n2 = s2.length();
-
-        if(n1 != n2)
+        
+        if(s1 != s2)
             return false;
-        else
-        {
-            for(int i=0; i<n1; i++)
-            {
-                if(s1[i] != s2[i])
-                    return false;
-            }
-        }
         return true;
-
     }
 };
