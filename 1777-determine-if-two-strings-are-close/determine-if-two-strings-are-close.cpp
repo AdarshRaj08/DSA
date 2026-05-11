@@ -22,7 +22,7 @@ public:
             freq2[idx2]++;
         }
 
-        // check rule 1
+        // check rule 1 that whether all element is present or not
 
         for(int i=0; i<26; i++)
         {
@@ -36,6 +36,7 @@ public:
         sort(begin(freq1),end(freq1));
         sort(begin(freq2),end(freq2));
 
+        // check rule 2 ki frequency same hai 
         return freq1 == freq2;
     }
 };
