@@ -1,23 +1,21 @@
 class Solution {
 public:
     string makeGood(string s) {
+        string result = "";
         int n = s.length();
-
-        if(n == 1)
+        
+        for(char &ch : s)
         {
-            return s;
-        }
-
-        for(int i=0; i<n-1; i++)
-        {
-            if((s[i+1] == s[i] + 32) || (s[i+1] == s[i] - 32))
+            if(!result.empty() && (result.back() + 32 == ch || result.back() - 32 == ch))
             {
-                s.erase(i,2);
-                n = s.length();
-                i=-1;
+                result.pop_back();
+            }
+            else
+            {
+                result.push_back(ch);
             }
         }
 
-        return s;
+        return result;
     }
 };
