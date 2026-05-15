@@ -26,31 +26,6 @@ public:
         return ans;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         // // other method
         // unordered_set<int> st1(begin(nums1),end(nums1));
         // vector<int>st2;
@@ -59,7 +34,7 @@ public:
         // {
         //     if(st1.find(num) != st1.end())
         //         st2.push_back(num);
-        //         st1.erase(num);
+        //         st1.erase(num);             // erasing for removing problem of the duplicate
         // }
 
         // return st2;
